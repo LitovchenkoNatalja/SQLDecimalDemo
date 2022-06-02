@@ -1,0 +1,33 @@
+﻿namespace DecimalDemoProject.Controllers
+{
+    using DecimalDemoProject.Services;
+    using Microsoft.AspNetCore.Mvc;
+    using System.Threading;
+    using System.Threading.Tasks;
+
+    [ApiController]
+    [Route("[controller]")]
+    public class DecimalValuesController : ControllerBase
+    {
+        private readonly IDecimalValuesService _decimalValuesService;
+
+        public DecimalValuesController(IDecimalValuesService decimalValuesService)
+        {
+            _decimalValuesService = decimalValuesService;
+        }
+
+        [HttpGet]
+        public async Task<ResultModel> Get([FromQuery]DecimalValuesRequest request, CancellationToken cancellationToken)
+        {
+            var result = await _decimalValuesService.CalculationsAsync(request, cancellationToken);
+            return result;
+        }
+
+        [HttpGet("test")]
+        public System.Collections.Generic.List<long> GetTest(int n, CancellationToken cancellationToken)
+        {
+            var result = _decimalValuesService.Test(n);
+            return result;
+        }
+    }
+}
