@@ -22,12 +22,5 @@
             var result = await _decimalValuesService.CalculationsAsync(request, cancellationToken);
             return result;
         }
-
-        [HttpGet("test")]
-        public System.Collections.Generic.List<long> GetTest(int n, CancellationToken cancellationToken)
-        {
-            var result = _decimalValuesService.Test(n);
-            return result;
-        }
     }
 }

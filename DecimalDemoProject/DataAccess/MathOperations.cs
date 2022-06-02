@@ -1,4 +1,4 @@
-﻿namespace DecimalDemoProject.Services
+﻿namespace DecimalDemoProject.DataAccess
 {
     using System.Data.SqlTypes;
 

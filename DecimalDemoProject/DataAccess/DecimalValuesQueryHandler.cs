@@ -14,8 +14,6 @@
 
     public class DecimalValuesQueryHandler: IDecimalValuesQueryHandler
     {
-        private readonly string GetDecimalValuesQuery = @"SELECT * FROM DecimalValue";
-
         private DbSettings _dbSettings;
 
         public DecimalValuesQueryHandler(IOptions<DbSettings> dbSettings) =>
@@ -26,7 +24,8 @@
             using (var connection = new SqlConnection(_dbSettings.DefaultConnection))
             {
                 connection.Open();
-                using (var cmd = new SqlCommand(GetDecimalValuesQuery, connection))
+                string getDecimalValuesQuery = @"SELECT * FROM DecimalValue";
+                using (var cmd = new SqlCommand(getDecimalValuesQuery, connection))
                 {
                     using (var dr = await cmd.ExecuteReaderAsync(cancellationToken))
                     {
