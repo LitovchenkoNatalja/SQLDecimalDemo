@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31911.196
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecimalDemoProject", "DecimalDemoProject\DecimalDemoProject.csproj", "{596C0301-8123-4670-AACD-F58C6F7E18B3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecimalDemoTestProject", "DecimalDemoTestProject\DecimalDemoTestProject.csproj", "{451068E1-D477-4B5B-96C5-682E37F44BB1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecimalDemoProject", "DecimalDemoProject\DecimalDemoProject.csproj", "{596C0301-8123-4670-AACD-F58C6F7E18B3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +15,6 @@ Global
 		{596C0301-8123-4670-AACD-F58C6F7E18B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{596C0301-8123-4670-AACD-F58C6F7E18B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{596C0301-8123-4670-AACD-F58C6F7E18B3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{451068E1-D477-4B5B-96C5-682E37F44BB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{451068E1-D477-4B5B-96C5-682E37F44BB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{451068E1-D477-4B5B-96C5-682E37F44BB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{451068E1-D477-4B5B-96C5-682E37F44BB1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
